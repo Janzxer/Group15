@@ -154,6 +154,20 @@ section
     line-height: 1.6;
 }
 
+section.col-12 {
+    border: 1px solid black !important;
+    border-radius: 8px !important; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow */
+    padding: 20px !important; /* Space inside the section */
+    background-color: #F0F0F0 !important; /* Optional: White background for contrast */
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* Smooth hover effect */
+}
+
+section.col-12:hover {
+    transform: translateY(-5px) !important; /* Slight upward lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* Enhanced shadow on hover */
+}
+
 /* Footer */
 .footer
 {
