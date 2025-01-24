@@ -154,6 +154,46 @@ section
     line-height: 1.6;
 }
 
+.service-item
+{
+    margin-bottom: 0;
+}
+
+.service-title
+{
+    text-align: left !important;
+    border-bottom: 1px solid black;
+}
+
+.service-description
+{
+    margin-bottom: 0;
+    color: black;
+}
+
+.service-price-section
+{
+    border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2rem;
+}
+
+.service-item {
+    background-color: #F0F0F0;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+
 /* Footer */
 .footer
 {
@@ -405,6 +445,30 @@ section
     .form-control
     {
         width: 100%;
+    }
+
+    .service-item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .service-item .row {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .service-item .col-9, .service-item .col-3 {
+        width: 100%;
+    }
+
+    .service-price-section
+    {
+        display: block;
+        border-left: none; 
+        border-top: 1px solid black; /* Add top border */
+        text-align: center !important; /* Center price text */
+        margin-top: 10px; /* Space from description */
     }
 }
 
