@@ -151,8 +151,8 @@ section
 {
     max-width: 900px;
     margin: 1rem auto;
-    /*margin-left: 45px; */
-    padding-left: 4rem;
+    /*margin-left: 10px;*/
+    padding-left: 8.8rem;
 
     line-height: 1.4; /* Tuunasin tätä vähän pienemmäksi */
     font-size: 1.1rem; /* Lisäsin tämän rivin */
