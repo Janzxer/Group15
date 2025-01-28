@@ -16,8 +16,6 @@ body
 
 h1, h2, h3, h4, h5, h6
 {
-    /* Adds shadow to the headings, can be removed if wanted */
-    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); */
     text-align: center;
     margin-bottom: 30px;
     font-weight: bold;
@@ -25,7 +23,6 @@ h1, h2, h3, h4, h5, h6
 
 section
 {
-     /* Adds space below the section for better visuals */
     margin-bottom: 50px;
 }
 
@@ -138,7 +135,7 @@ section
 /* Content Section */
 .content
 {
-    min-height: 100vh;
+    min-height: 150vh;
     padding: 2rem;
     border-radius: 10px;
     margin-top: 1rem;
@@ -151,12 +148,150 @@ section
 {
     max-width: 900px;
     margin: 1rem auto;
-    /*margin-left: 10px;*/
-    padding-left: 2rem;
-    line-height: 1.4; /* Tuunasin tätä vähän pienemmäksi */
-    font-size: 1.1rem; /* Lisäsin tämän rivin */
+    line-height: 1.6;
+    text-align: left;
 }
 
+.service-item
+{
+    margin-bottom: 0;
+}
+
+.service-title
+{
+    text-align: left !important;
+    border-bottom: 1px solid black;
+}
+
+.service-description
+{
+    margin-bottom: 0;
+    color: black;
+}
+
+.service-price-section
+{
+    border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2rem;
+}
+
+.service-item {
+    background-color: #F0F0F0;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.category-title
+{
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-grid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+/* Product card styling */
+.product-card
+{
+    text-align: center;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: #FAFAFA;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover
+{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Image container */
+.product-image-container
+{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Product image */
+.product-image-container img
+{
+    width: auto;
+    transition: transform 0.3s ease;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* Hidden description on hover */
+.product-description
+{
+    height: 0;
+    overflow: hidden;
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    transition: height 0.3s ease, padding 0.3s ease;
+}
+
+/* Show description on hover */
+.product-card:hover .product-image-container img
+{
+    transform: scale(1.1);
+}
+
+.product-card:hover .product-description
+{
+    height: auto;
+    padding: 1rem;
+}
+
+.product-price
+{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.section-styling
+{
+    border: 1px solid black !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    padding: 20px !important;
+    background-color: #F0F0F0 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.section-styling:hover
+{
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
 
 /* Footer */
 .footer
@@ -257,13 +392,18 @@ section
     {
         margin-bottom: 10px;
     }
+
+    .product-grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 576px)
 {
     .logo img
     {
-        height: 50px;
+        height: 70px;
     }
 
     .company-name
@@ -279,6 +419,25 @@ section
     .footer
     {
         font-size: 0.9rem;
+    }
+
+    .product-description
+    {
+        display: block;
+        font-size: 0.9rem;
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    .product-card
+    {
+        padding: 10px;
+    }
+
+    .product-card p
+    {
+        font-size: 24px;
+        word-wrap: break-word;
     }
 }
 
@@ -308,7 +467,7 @@ section
 
     .logo img
     {
-        height: 40px;
+        height: 60px;
         margin-right: auto;
         margin-left: auto;
         border-radius: 0;
@@ -344,6 +503,11 @@ section
     {
         width: 100%;
     }
+
+    .product-grid
+    {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -370,7 +534,7 @@ section
     
     .logo img
     {
-        height: 30px;
+        height: 50px;
         border-radius: 0;
         margin-right: 100px;
     }
@@ -410,6 +574,31 @@ section
     {
         width: 100%;
     }
+
+    .service-item
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .service-item .row
+    {
+        flex-direction: column;
+    }
+
+    .service-item .col-9, .service-item .col-3
+    {
+        width: 100%;
+    }
+
+    .service-price-section
+    {
+        display: block;
+        border-left: none; 
+        border-top: 1px solid black;
+        text-align: center !important;
+        margin-top: 10px;
+    }
 }
-
-

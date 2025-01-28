@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fi">
     <head>
@@ -6,13 +7,11 @@
         <meta name="robots" content="index, follow">
         <meta name="description" content="Explore our top-quality electronics products at JHJ Electronics. Find the perfect device to meet your needs.">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href="tuotteet.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <title>Tuote sivu</title>
     </head>
-
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
         <!-- The sticky header-->
         <header class="header-container">
             <div class="container-fluid">
@@ -23,21 +22,19 @@
                             <img src="img/logo.png" alt="JHJ Electronics Logo" class="img-fluid">
                         </a>
                     </div>
-
                     <!-- Company Name -->
                     <div class="company-name">
                         <h1>JHJ Electronics</h1>
                     </div>
                 </div>
-
-                    <!-- Navigation Bar -->
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container">
-                            <a class="navbar-brand btn-sm btn-outline-black" href="index.html">Etusivu</a>
+                <!-- Navigation Bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <a class="navbar-brand btn-sm btn-outline-black" href="index.html">Etusivu</a>
                         
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav me-auto">
@@ -48,7 +45,7 @@
                                     <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="palvelut.html">Palvelut</a>
                                 </li>
                                 <li class="nav-item">
-                                       <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="meista.html">Meistä</a>
+                                    <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="meista.html">Meistä</a>
                                 </li>
                             </ul>
 
@@ -66,53 +63,206 @@
         <!-- Content area-->
         <main class="container-fluid my-5 content">
             <section>
-                <h2>Satelliittipuhelimet</h2>
-                <p class="content-text">Vuoristoseikkailuihin laadukkaat ja luotettavat yhteydenpitovälineet</p>
-                <br>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="img/satpuh-inmarsat350.png" alt="Satellittipuhelin Inmarsat " class="img-fluid mx-auto d-block">
-                        <p class="content-text"><strong>Inmarsat IsatPhone 2</strong></p>
-                        <p class="content-text">Alkaen: <strong>990 €</strong></p>
-                        <p class="content-text">Inmarsat IsatPhone 2 satelliittipuhelin tarjoaa perustoiminnallisuudet laajalla toiminta-alueella.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/satpuh-thutaya350.png" alt="Satelliittipuhelin Thuraya" class="img-fluid mx-auto d-block">
-                        <p class="content-text"><strong>Thuraya XT-Lite</strong></p>
-                        <p class="content-text">Alkaen: <strong>850 €</strong></p>
-                        <p class="content-text">Thuraya’s XT-LITE on markkinoiden yksi edullisimmista laadukkaista satelliittipuhelimista.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/satpuh-iridium320.png" alt="Satellittipuhelin Iridium" class="img-fluid mx-auto d-block">
-                        <p class="content-text"><strong>Iridium 9575 Extreme</strong></p>
-                        <p class="content-text">Alkaen: <strong>1150 €</strong></p>
-                        <p class="content-text">Erittäin laadukas ja toimintavarma satelliittipuhelin.</p>
+                <h2>Tuotteet</h2>
+                <!-- Phones category -->
+                <div class="category mb-4">
+                    <h2 class="category-title mb-2" data-bs-toggle="collapse" data-bs-target="#phones">
+                        Puhelimet
+                    </h2>
+                    <div id="phones" class="collapse">
+                        <div class="row">
+                            <!-- Product 1 -->
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image-container">
+                                        <img src="img/satpuh-thutaya150.png" alt="Thuraya XT-Lite">
+                                    </div>
+
+                                    <h3 class="mt-5">Thuraya<br>XT-Lite</h3>
+                                    <p class="product-price">850 €</p>
+                                    <div class="product-description">
+                                        Markkinoiden yksi edullisimmista laadukkaista satelliittipuhelimista.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 2 -->
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image-container">
+                                        <img src="img/satpuh-inmarsat150.png" alt="Inmarsat IsatPhone 2">
+                                    </div>
+
+                                    <h3 class="mt-5">Inmarsat<br>IsatPhone 2</h3>
+                                    <p class="product-price">990 €</p>
+                                    <div class="product-description">
+                                        Tämä satelliittipuhelin tarjoaa perustoiminnallisuudet laajalla kuuluvuus-alueella.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 3 -->
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image-container">
+                                        <img src="img/satpuh-thurayaxt150.png" alt="Thuraya XT Pro">
+                                    </div>
+
+                                    <h3 class="mt-5">Thuraya<br>XT Pro</h3>
+                                    <p class="product-price">1090 €</p>
+                                    <div class="product-description">
+                                        Thuraya XT Pro tarjoaa laajemmat toiminnallisuudet kuin peruspuhelimet.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 4 -->
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image-container">
+                                        <img src="img/satpuh-iridium150.png" alt="Iridium 9575 Extreme">
+                                    </div>
+
+                                    <h3 class="mt-5">Iridium<br>9575 Extreme</h3>
+                                    <p class="product-price">1290 €</p>
+                                    <div class="product-description">
+                                        Erittäin laadukas ja toimintavarma satelliittipuhelin.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-                
-            <section>
-                <section>
-                    <h2>Lisätarvikkeet</h2>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="img/satpuhakku.png" alt="Akku" class="img-fluid mx-auto d-block">
-                            <p class="content-text"><strong>Tehoakku</strong></p>
-                            <p class="content-text">Tällä akulla lisää toimintaikaa satelliittipuhelimeen.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/satpuhkaapeli.png" alt="Latauskaapeli" class="img-fluid mx-auto d-block">
-                            <p class="content-text"><strong>USB latauskaapeli</strong></p>
-                            <p class="content-text">USB latauskaapeli satelliittipuhelimeen.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="img/suojakotelo.png" alt="Suojakotelo" class="img-fluid mx-auto d-block">
-                            <p class="content-text"><strong>Suojakotelo</strong></p>
-                            <p class="content-text">Suojaa arvokkaalle satelliittipuhelimelle.</p>
+                <!-- Desktop category -->
+                <div class="category mb-4">
+                    <h2 class="category-title mb-2" data-bs-toggle="collapse" data-bs-target="#desktops">
+                        Desktops
+                    </h2>
+                    <div id="desktops" class="collapse">
+                        <div class="row">
+                            <!-- Product 5 -->
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image-container">
+                                        <img src="img/logo.png" alt="Product 5">
+                                    </div>
+
+                                    <h3 class="mt-5">Tuote 5</h3>
+                                    <p class="product-price">25€</p>
+                                    <div class="product-description">
+                                        Tämä on viidennen tuotteen kuvaus. Se on korkealaatuinen ja suosittu.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 6 -->
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image-container">
+                                        <img src="img/logo.png" alt="Product 6">
+                                    </div>
+
+                                    <h3 class="mt-5">Tuote 6</h3>
+                                    <p class="product-price">25€</p>
+                                    <div class="product-description">
+                                        Tämä on kuudennen tuotteen kuvaus. Se on korkealaatuinen ja suosittu.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 7 -->
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image-container">
+                                        <img src="img/logo.png" alt="Product 7">
+                                    </div>
+
+                                    <h3 class="mt-5">Tuote 7</h3>
+                                    <p class="product-price">25€</p>
+                                    <div class="product-description">
+                                        Tämä on seitsemännen tuotteen kuvaus. Se on korkealaatuinen ja suosittu.
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Product 8 -->
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image-container">
+                                        <img src="img/logo.png" alt="Product 8">
+                                    </div>
+
+                                    <h3 class="mt-5">Tuote 8</h3>
+                                    <p class="product-price">25€</p>
+                                    <div class="product-description">
+                                        Tämä on kahdeksannen tuotteen kuvaus. Se on korkealaatuinen ja suosittu.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </section>
-            </section>
+                </div>
+                <!-- Screens category -->
+                <div class="category mb-4">
+                    <h2 class="category-title mb-2" data-bs-toggle="collapse" data-bs-target="#screens">
+                        Näytöt
+                    </h2>
+                    <div id="screens" class="collapse">
+                        <div class="row">
+                            <!-- Product 9 -->
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image-container mb-2">
+                                        <img src="img/screen1.jpg" alt="Picture of PixelVision X1 computer monitor">
+                                    </div>
+
+                                    <h3>PixelVision X1</h3>
+                                    <p class="product-price">250€</p>
+                                    <div class="product-description">
+                                        PixelVision X1 -monitori tuo digitaalisen kokemuksesi eloon upealla kirkkaudella ja poikkeuksellisella suorituskyvyllä. 27 tuuman UltraHD-näyttö, jossa on tyylikäs reunasta reunaan -muotoilu, tarjoaa eloisat värit ja terävät yksityiskohdat, mikä tekee siitä täydellisen sekä luovan alan ammattilaisille että pelaajille.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 10 -->
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image-container mb-2">
+                                        <img src="img/screen2.jpg" alt="Picture of PanoraMax 42W computer monitor">
+                                    </div>
+
+                                    <h3>PanoraMax 42W</h3>
+                                    <p class="product-price">500€</p>
+                                    <div class="product-description">
+                                        PanoraMax 42W on ultralaajakuva näyttö, joka tarjoaa poikkeuksellisen kirkkaan ja tarkan kuvanlaadun. 42-tuumainen paneeli yhdistää laajan katselukulman ja upean väritarkkuuden, tehden siitä erinomaisen valinnan niin pelaamiseen, sisällöntuotantoon kuin monitehtävien käyttöön.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 11 -->
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image-container mb-2">
+                                        <img src="img/screen3.jpg" alt="Picture of ViperGaming X computer monitor">
+                                    </div>
+
+                                    <h3>ViperGaming X</h3>
+                                    <p class="product-price">750€</p>
+                                    <div class="product-description">
+                                        ViperGaming X on korkeatehoinen 34-tuumainen ultralaajakuvan pelimonitori, joka on suunniteltu tarjoamaan mukaansatempaavan kokemuksen kaikkein intensiivisimmissä pelisessioissa.
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Product 12 -->
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                                <div class="product-card">
+                                    <div class="product-image-container mb-2">
+                                        <img src="img/screen4.jpg" alt="Picture of VisionPro 27X computer monitor">
+                                    </div>
+
+                                    <h3>VisionPro 27X</h3>
+                                    <p class="product-price">650€</p>
+                                    <div class="product-description">
+                                        VisionPro 27X on suunniteltu erityisesti graafisille suunnittelijoille ja ammattilaisille, jotka tarvitsevat tarkkaa väritarkkuutta ja laajaa näkökenttää. 27 tuuman näyttö tarjoaa 4K-resoluution ja 99% sRGB-väriavaruuden, mikä takaa tarkan ja eläväisen värintoiston.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                           
+            </section>        
         </main>
 
         <!-- Footer -->

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
         <meta name="description" content="Welcome to JHJ Electronics, where we provide top-quality electronics and services to our customers.">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href="etusivu.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <title>JHJ Electronics</title>
     </head>
 
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
         <!-- The sticky header-->
         <header class="header-container">
             <div class="container-fluid">
@@ -23,21 +22,19 @@
                             <img src="img/logo.png" alt="JHJ Electronics Logo" class="img-fluid">
                         </a>
                     </div>
-
                     <!-- Company Name -->
                     <div class="company-name">
                         <h1>JHJ Electronics</h1>
                     </div>
                 </div>
-
-                    <!-- Navigation Bar -->
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container">
-                            <a class="navbar-brand btn-sm btn-outline-black" href="index.html">Etusivu</a>
+                <!-- Navigation Bar -->
+                <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+                    <div class="container">
+                        <a class="navbar-brand btn-sm btn-outline-black" href="index.html">Etusivu</a>
                         
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav me-auto">
@@ -45,10 +42,10 @@
                                     <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="tuotteet.html">Tuotteet</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="tuotteet4.html">Palvelut</a>
+                                    <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="palvelut.html">Palvelut</a>
                                 </li>
                                 <li class="nav-item">
-                                       <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="meista.html">Meistä</a>
+                                    <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="meista.html">Meistä</a>
                                 </li>
                             </ul>
 
@@ -62,32 +59,48 @@
                 </nav>
             </div>
         </header>
-
         <!-- Content area-->
         <main class="container-fluid my-5 content">
-            <section>
-                <h2>Etusivu</h2>
-                    <div class="content-txt">
-                        <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At natus ab corporis architecto error, aspernatur quas nisi cum reiciendis repellendus dolorem magnam unde, laudantium dignissimos laborum earum, repudiandae eveniet esse!</p>
-                    </div>
-                    <div>
-                        <p class="content-text">Sunt, nam libero laboriosam hic, aliquam, odit provident molestias facere eius perferendis voluptates? Rem maxime reprehenderit rerum doloribus distinctio quod voluptatum incidunt. Laboriosam repudiandae porro delectus sapiente reiciendis amet eius!</p>
-                    </div>
-                    <div>
-                        <p class="content-text">Laborum minus quia voluptatibus maxime culpa recusandae, illo ab unde sint impedit enim nesciunt quibusdam numquam similique, maiores cum, nam veniam expedita? Voluptate culpa quasi sequi, sed quibusdam ipsa totam.</p>
-                    </div>
+            <section class="product-card mb-4">
+                <h2>Tervetuloa JHJ Electronicsiin – Sähköisen elämän megalataamo!</h2>
+                <div class="content-txt">
+                    <p class="content-text mb-2">Tervetuloa paikkaan, jossa elektroniikan unelmat heräävät eloon (ja piuhat pysyvät solmussa)!</p>
+                    <p class="content-text mb-2">Me JHJ Electronicsilla olemme ylpeitä siitä, että olemme Suomen johtava – tai ainakin kympin kärjessä – sähkövempeleiden koti.</p>
+                </div>
+                <div>
+                    <p class="content-text mb-2">Oli tarpeesi sitten mikroaaltouuni, joka muistuttaa sinua liikaa 80-luvun diskosta, älypuhelin, joka on sinua fiksumpi, tai kuulokkeet, jotka eristävät kaiken paitsi tärkeät ilmoitukset… meillä on se kaikki.</p>
+                </div>
             </section>
-                
-            <section>
-                <h2>Viimeisimmät muutokset meillä</h2>
-                <div>
-                    <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At natus ab corporis architecto error, aspernatur quas nisi cum reiciendis repellendus dolorem magnam unde, laudantium dignissimos laborum earum, repudiandae eveniet esse!</p>
+        
+            <section class="product-card mb-4">
+                <h3 class="text-center">Miksi valita JHJ Electronics?</h3>
+                <div class="col-12">
+                    <p class="content-text mb-2">Laatua niin että kipinöi! Kaikki tuotteemme on testattu ainakin kerran… tai kaksi.</p>
                 </div>
-                <div>
-                    <p class="content-text">Sunt, nam libero laboriosam hic, aliquam, odit provident molestias facere eius perferendis voluptates? Rem maxime reprehenderit rerum doloribus distinctio quod voluptatum incidunt. Laboriosam repudiandae porro delectus sapiente reiciendis amet eius!</p>
+                <div class="col-12">
+                    <p class="content-text mb-2">Hintamme? Halvemmat kuin naapurin wifi!</p>
                 </div>
-                <div>
-                    <p class="content-text">Laborum minus quia voluptatibus maxime culpa recusandae, illo ab unde sint impedit enim nesciunt quibusdam numquam similique, maiores cum, nam veniam expedita? Voluptate culpa quasi sequi, sed quibusdam ipsa totam.</p>
+                <div class="col-12">
+                    <p class="content-text mb-2">Asiakaspalvelu, joka oikeasti vastaa! (Joskus jopa ystävällisesti.)</p>
+                </div>
+            </section>
+        
+            <section class="product-card mb-4">
+                <h3 class="text-center">Mitä meiltä löydät?</h3>
+                <div class="col-12">
+                    <p class="content-text mb-2">Gadgetit ja hilavitkuttimet: Jos siinä on nappi, me myymme sen.</p>
+                </div>
+                <div class="col-12">
+                    <p class="content-text mb-2">Kodin elektroniikka: Pölynimureista pelikonsoleihin – ja kaikkea siltä väliltä.</p>
+                </div>
+                <div class="col-12">
+                    <p class="content-text mb-2">Kaapelit, adapterit ja muut mysteeriosat: Koska mikään ei toimi ilman niitä, paitsi ne laitteet, jotka hukkaavat ne.</p>
+                </div>
+                <div class="col-12">
+                    <p class="content-text mb-2">Älä jää sähköttömään elämään! Sukella JHJ Electronicsin valikoimaan ja löydä itsellesi uusi suosikkihärveli – tai ainakin jokin, joka kerää pölyä tyylillä.</p>
+                </div>
+                <div class="col-12">
+                    <p class="content-text mb-2">Klikkaa sisään, koska elämä on liian lyhyt huonojen laitteiden kanssa. Ja hei, paristot eivät todellakaan sisälly hintaan!</p>
                 </div>
             </section>
         </main>
@@ -95,7 +108,7 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="container text-center">
-                <nav>
+                <nav aria-label="Footer navigation">
                     <ul class="list-inline mb-2">
                         <li class="list-inline-item"><a href="#">Terms of Service</a></li>
                         <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
