@@ -97,9 +97,15 @@ section
     border: none;
 }
 
+.navbar .d-flex
+{
+    justify-content: flex-end;
+}
+
 .form-control
 {
-    width: auto;
+    width: 100%;
+    max-width: auto;
 }
 
 
@@ -391,6 +397,16 @@ section
     .footer ul li
     {
         margin-bottom: 10px;
+    }
+
+    .navbar .collapse
+    {
+        justify-content: space-between;
+    }
+
+    .form-control
+    {
+        max-width: 250px;
     }
 }
 
