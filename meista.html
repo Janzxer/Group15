@@ -9,10 +9,8 @@
         <link href="style.css" rel="stylesheet">
         <title>Meistä</title>
     </head>
-
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
         <!-- The sticky header-->
         <header class="header-container">
             <div class="container-fluid">
@@ -23,35 +21,33 @@
                             <img src="img/logo.png" alt="JHJ Electronics Logo" class="img-fluid">
                         </a>
                     </div>
-
                     <!-- Company Name -->
                     <div class="company-name">
                         <h1>JHJ Electronics</h1>
                     </div>
                 </div>
-
-                    <!-- Navigation Bar -->
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container">
-                            <a class="navbar-brand btn-sm btn-outline-black" href="index.html">Etusivu</a>
-                        
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                    
+                <!-- Navigation Bar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <a class="navbar-brand btn-sm btn-outline-black" href="index.html">Etusivu</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="tuotteet.html">Tuotteet</a>
+                                    <a class="nav-link active btn-sm btn btn-outline-black" href="tuotteet.html">Tuotteet</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="palvelut.html">Palvelut</a>
+                                    <a class="nav-link active btn-sm btn btn-outline-black" href="palvelut.html">Palvelut</a>
                                 </li>
                                 <li class="nav-item">
                                        <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="meista.html">Meistä</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active btn-sm btn btn-outline-black" href="#">Ostoskori</a>
+                                </li>
                             </ul>
-
                             <form class="d-flex" role="search">
                                 <label for="searchInput" class="visually-hidden">Search</label>
                                 <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
@@ -62,7 +58,6 @@
                 </nav>
             </div>
         </header>
-
         <!-- Content area-->
         <main class="container-fluid my-5 content">
             <section class="col-12 mb-4">
@@ -84,7 +79,6 @@
                     <p class="content-text" style="text-align: center !important;">Ma-Pe 9:00-17:00</p>
                 </div>
             </section>
-
             <section>
             <h2>Keitä me olemme</h2>
                 <div class="row text-center">
@@ -93,8 +87,7 @@
                         <div class="row align-items-center">
                             <div class="col-12 col-md-4 mb-4 mb-md-0">
                                 <img src="img/Dira-small.png" class="img-fluid rounded-circle img-thumbnail" style="max-width: 75%;" alt="Photo of Jani, project team member.">
-                            </div>
-                                
+                            </div>   
                             <div class="col-12 col-md-8">
                                 <h3>Jani</h3>
                                 <p class="content-text">I am Jani and studying information technology at Häme University of applied sciences alongside my daily job. Multi-modal learning is good option for me even though not much freetime available anymore.</p>
@@ -107,7 +100,6 @@
                             <div class="col-12 col-md-4 mb-4 mb-md-0 order-md-2">
                                 <img src="img/hassukoira.png" class="img-fluid rounded-circle img-thumbnail" style="max-width: 75%;" alt="Photo of Henry, project team member.">
                             </div>
-
                             <div class="col-12 col-md-8 order-md-1 order-1">    
                                 <h3>Henry</h3>
                                 <p class="content-text">I am a vocational university student in information technology, transitioning from a career as a truck driver.</p>
@@ -122,13 +114,13 @@
                             <div class="col-12 col-md-4 mb-4 mb-md-0">
                                 <img src="img/janne.jpg" class="img-fluid rounded-circle img-thumbnail" style="max-width: 75%;" alt="Photo of Janne, project team member.">
                             </div>
-
                             <div class="col-12 col-md-8">
                                 <h3>Janne</h3>
                                 <p class="content-text">I'm Janne, currently studying ICT at HAMK. I have a bachelor's degree in Bioproduct and Process Engineering and a vocational qualification as a Laboratory Technician.</p>
-                                <p class="content-text">Currently I'm interested in learning to make clean and visually appealing websites.</p>
-                                <p class="content-text">I'm not yet sure on what I want to specialise in regards to ICT. I'm interested in being a full stack developer, but only time will tell what is the most interesing aspect of ICT.</p>
+                                <p class="content-text">I'm currently interested in learning how make clean and visually appealing websites.</p>
+                                <p class="content-text">I'm not yet sure what I want to specialise in within ICT. I'm interested in becoming a full-stack developer, but only time will tell which aspect of ICT interests me the most is the most.</p>
                                 <p class="content-text">Free time is spent mostly playing games:</p>
+                                <nav aria-label="Favorite Games">    
                                     <ul>
                                         <li>Balatro</li>
                                         <li>Brotato</li>
@@ -136,7 +128,8 @@
                                         <li>Frostpunk 2</li>
                                         <li>Path of Exile 2</li>
                                     </ul>
-                                <p class="content-text">Menace of my free time is when I close my eyes and see HTML!</p>
+                                </nav>
+                                <p class="content-text">My free time is haunted by closing my eyes and seeing HTML!</p>
                                 <p class="content-text">You can find me on <a href="https://github.com/Janzxer" target="_blank">GitHub</a> and <a href="https://www.linkedin.com/in/j-viljanen/" target="_blank">LinkedIn</a>.</p>
                             </div>
                         </div>
@@ -144,7 +137,6 @@
                 </div>
             </section>
         </main>
-
         <!-- Footer -->
         <footer class="footer">
             <div class="container text-center">
