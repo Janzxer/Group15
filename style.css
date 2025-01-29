@@ -2,7 +2,7 @@
 body
 {
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url('https://cdn.britannica.com/21/102921-050-FD03D790/Panorama-peaks-North-Cascades-National-Park-Washington.jpg');
     background-size: cover;
@@ -152,7 +152,7 @@ section
 
 .content-text
 {
-    max-width: 900px;
+    max-width: 650px;
     margin: 1rem auto;
     line-height: 1.6;
     text-align: left;
