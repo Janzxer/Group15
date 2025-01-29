@@ -31,24 +31,24 @@
                 <nav class="navbar navbar-expand-lg">
                     <div class="container">
                         <a class="navbar-brand btn-sm btn-outline-black" href="index.html">Etusivu</a>
-                        
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                    
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
                                     <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="tuotteet.html">Tuotteet</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="palvelut.html">Palvelut</a>
+                                    <a class="nav-link active btn-sm btn btn-outline-black" href="palvelut.html">Palvelut</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active btn-sm btn btn-outline-black" aria-current="page" href="meista.html">Meistä</a>
+                                    <a class="nav-link active btn-sm btn btn-outline-black" href="meista.html">Meistä</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active btn-sm btn btn-outline-black" href="#">Ostoskori</a>
                                 </li>
                             </ul>
-
                             <form class="d-flex" role="search">
                                 <label for="searchInput" class="visually-hidden">Search</label>
                                 <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
@@ -59,7 +59,6 @@
                 </nav>
             </div>
         </header>
-
         <!-- Content area-->
         <main class="container-fluid my-5 content">
             <section>
@@ -67,9 +66,7 @@
                 <!-- Phones category -->
                 <div class="category mb-4">
                     <h2 class="category-title mb-2" data-bs-toggle="collapse" data-bs-target="#phones">
-
                         Puhelimet
-
                     </h2>
                     <div id="phones" class="collapse">
                         <div class="row">
@@ -77,15 +74,13 @@
                             <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                                 <div class="product-card">
                                     <div class="product-image-container">
-
                                         <img src="img/satpuh-thutaya150.png" alt="Thuraya XT-Lite">
                                     </div>
-
                                     <h3 class="mt-5">Thuraya<br>XT-Lite</h3>
                                     <p class="product-price">850 €</p>
                                     <div class="product-description">
-                                        Markkinoiden yksi edullisimmista laadukkaista satelliittipuhelimista.
-
+                                        <p class="product-description-text">Markkinoiden yksi edullisimmista laadukkaista satelliittipuhelimista.</p>
+                                        <button class="product-button mt-4"><img src="img/cart.png" alt="shopping cart image" style="height: 50px;"><br>+ Lisää ostoskoriin</button>
                                     </div>
                                 </div>
                             </div>
@@ -95,11 +90,11 @@
                                     <div class="product-image-container">
                                         <img src="img/satpuh-inmarsat150.png" alt="Inmarsat IsatPhone 2">
                                     </div>
-
                                     <h3 class="mt-5">Inmarsat<br>IsatPhone 2</h3>
                                     <p class="product-price">990 €</p>
                                     <div class="product-description">
-                                        Tämä satelliittipuhelin tarjoaa perustoiminnallisuudet laajalla kuuluvuus-alueella.
+                                        <p class="product-description-text">Tämä satelliittipuhelin tarjoaa perustoiminnallisuudet laajalla kuuluvuus-alueella.</p>
+                                        <button class="product-button mt-4"><img src="img/cart.png" alt="shopping cart image" style="height: 50px;"><br>+ Lisää ostoskoriin</button>
                                     </div>
                                 </div>
                             </div>
@@ -109,11 +104,11 @@
                                     <div class="product-image-container">
                                         <img src="img/satpuh-thurayaxt150.png" alt="Thuraya XT Pro">
                                     </div>
-
                                     <h3 class="mt-5">Thuraya<br>XT Pro</h3>
                                     <p class="product-price">1090 €</p>
                                     <div class="product-description">
-                                        Thuraya XT Pro tarjoaa laajemmat toiminnallisuudet kuin peruspuhelimet.
+                                        <p class="product-description-text">Thuraya XT Pro tarjoaa laajemmat toiminnallisuudet kuin peruspuhelimet.</p>
+                                        <button class="product-button mt-4"><img src="img/cart.png" alt="shopping cart image" style="height: 50px;"><br>+ Lisää ostoskoriin</button>
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +121,8 @@
                                     <h3 class="mt-5">Iridium<br>9575 Extreme</h3>
                                     <p class="product-price">1290 €</p>
                                     <div class="product-description">
-                                        Erittäin laadukas ja toimintavarma satelliittipuhelin.
+                                        <p class="product-description-text">Erittäin laadukas ja toimintavarma satelliittipuhelin.</p>
+                                        <button class="product-button mt-4"><img src="img/cart.png" alt="shopping cart image" style="height: 50px;"><br>+ Lisää ostoskoriin</button>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +132,7 @@
                 <!-- Desktop category -->
                 <div class="category mb-4">
                     <h2 class="category-title mb-2" data-bs-toggle="collapse" data-bs-target="#desktops">
-                        Desktops
+                        Pöytäkoneet
                     </h2>
                     <div id="desktops" class="collapse">
                         <div class="row">
@@ -146,17 +142,17 @@
                                     <div class="product-image-container">
                                         <img src="img/desktop1.png" alt="Product 5">
                                     </div>
-
                                     <h3 class="mt-5">Lenovo ThinkCentre M70q Tiny Gen 5</h3>
                                     <p class="product-price">969,99 €</p>
                                     <div class="product-description">
-                                        Lenovo ThinCentre M70q Tiny on äärimmäisen pieni ja monikäyttöinen hyvällä suorituskyvyllä ja luotettavudella.
+                                        <p class="product-description-text">Lenovo ThinCentre M70q Tiny on äärimmäisen pieni ja monikäyttöinen hyvällä suorituskyvyllä ja luotettavudella.</p>
                                         <ul>
                                             <li>Intel i5-14400T</li>
                                             <li>16Gt, 512 Gt SSD</li>
                                             <li>Wi-Fi 6E, Bluetooth 5.1</li>
                                             <li>Pieni koko, laaja liitettävyys</li> 
                                         </ul>
+                                        <button class="product-button mt-4"><img src="img/cart.png" alt="shopping cart image" style="height: 50px;"><br>+ Lisää ostoskoriin</button>
                                     </div>
                                 </div>
                             </div>
@@ -166,11 +162,10 @@
                                     <div class="product-image-container">
                                         <img src="img/desktop2.png" alt="Product 6">
                                     </div>
-
                                     <h3 class="mt-5">Asus ROG Strix G35 - pelitietokone</h3>
                                     <p class="product-price">2999,99 €</p>
                                     <div class="product-description">
-                                        G35CA on varustettu raskaaseen pelaamiseen ja moniajoon, ja se pystyy käsittelemään melkein mitä vain voit kuvitella.
+                                        <p class="product-description-text">G35CA on varustettu raskaaseen pelaamiseen ja moniajoon, ja se pystyy käsittelemään melkein mitä vain voit kuvitella.</p>
                                         <ul>
                                             <li>Intel Core i9-13900KF</li>
                                             <li>16Gt, 1Tt SSD</li>
@@ -178,6 +173,7 @@
                                             <li>Pelaamiseen ja luovaan työskentelyyn</li>
                                             <li>Tehokas jäähdytys</li>
                                         </ul>
+                                        <button class="product-button mt-4"><img src="img/cart.png" alt="shopping cart image" style="height: 50px;"><br>+ Lisää ostoskoriin</button>
                                     </div>
                                 </div>
                             </div>
@@ -187,11 +183,10 @@
                                     <div class="product-image-container">
                                         <img src="img/desktop3.png" alt="Product 7">
                                     </div>
-
                                     <h3 class="mt-5">HP All-in-One 27-cr0001no (86F20EA)</h3>
                                     <p class="product-price">949,99 €</p>
                                     <div class="product-description">
-                                        Tällä ohuella 27 HP All-in-One - pöytäkoneella saat tehtyä enemmän ja kuluttamalla vähemmän. Vastuullisesti valmistettu käyttämällä kierrätysmuovia.                                                                                                           
+                                        <p class="product-description-text">Tällä ohuella 27 HP All-in-One - pöytäkoneella saat tehtyä enemmän ja kuluttamalla vähemmän. Vastuullisesti valmistettu käyttämällä kierrätysmuovia.</p>
                                         <ul>
                                             <li>AMD Ryzen 5 7520U</li>
                                             <li>16Gt, 512Gt SSD</li>
@@ -199,6 +194,7 @@
                                             <li>FullHD IPS -näyttö</li>
                                             <li>Langaton USB-näppäimistö ja hiiri</li>
                                         </ul>                          
+                                        <button class="product-button mt-4"><img src="img/cart.png" alt="shopping cart image" style="height: 50px;"><br>+ Lisää ostoskoriin</button>
                                     </div>
                                 </div>
                             </div> 
@@ -208,17 +204,17 @@
                                     <div class="product-image-container">
                                         <img src="img/dekstop4.png" alt="Product 8">
                                     </div>
-
                                     <h3 class="mt-5">Commodore 64 Personal Computer</h3>
                                     <p class="product-price">3000,-</p>
                                     <div class="product-description">
-                                        Commodore 64 on 8-bittinen kotitietokone, joka mullistaa tietokoneharrastuksen ja pelaamisen. Sen 64 kilotavua RAM-muistia, VIC-II-grafiikkapiiri ja SID-äänipiiri tekevät siitä viihteen monitoimilaitteen. C64 tarjoaa käyttäjilleen mahdollisuuden pelata pelejä, ohjelmoida omia sovelluksia BASIC-kielellä ja kokeilla jopa verkkoyhteyksiä. Yli 17 miljoonan kappaleen myynnillään se on kaikkien aikojen myydyin kotimikro!
+                                        <p class="product-description-text">Commodore 64 on 8-bittinen kotitietokone, joka mullistaa tietokoneharrastuksen ja pelaamisen. Sen 64 kilotavua RAM-muistia, VIC-II-grafiikkapiiri ja SID-äänipiiri tekevät siitä viihteen monitoimilaitteen. C64 tarjoaa käyttäjilleen mahdollisuuden pelata pelejä, ohjelmoida omia sovelluksia BASIC-kielellä ja kokeilla jopa verkkoyhteyksiä. Yli 17 miljoonan kappaleen myynnillään se on kaikkien aikojen myydyin kotimikro!</p>
                                         <ul>
                                             <li>MOS 6510 0,985 MHz</li>
                                             <li>64KB RAM</li>
                                             <li>Resoluutio 320x200,</li>
                                             <li>SID 6581 -äänipiiri</li>
                                         </ul> 
+                                        <button class="product-button mt-4"><img src="img/cart.png" alt="shopping cart image" style="height: 50px;"><br>+ Lisää ostoskoriin</button>
                                     </div>
                                 </div>
                             </div>
@@ -238,12 +234,13 @@
                                     <div class="product-image-container mb-2">
                                         <img src="img/screen1.jpg" alt="Picture of PixelVision X1 computer monitor">
                                     </div>
-
                                     <h3>PixelVision X1</h3>
-                                    <p class="product-price">250€</p>
+                                    <p class="product-price">250 €</p>
                                     <div class="product-description">
-                                        PixelVision X1 -monitori tuo digitaalisen kokemuksesi eloon upealla kirkkaudella ja poikkeuksellisella suorituskyvyllä. 27 tuuman UltraHD-näyttö, jossa on tyylikäs reunasta reunaan -muotoilu, tarjoaa eloisat värit ja terävät yksityiskohdat, mikä tekee siitä täydellisen sekä luovan alan ammattilaisille että pelaajille.
-                                    </div>
+                                        <p class="product-description-text">PixelVision X1 -monitori tuo digitaalisen kokemuksesi eloon upealla kirkkaudella ja poikkeuksellisella suorituskyvyllä.</p>
+                                        <p class="product-description-text">27 tuuman UltraHD-näyttö, jossa on tyylikäs reunasta reunaan -muotoilu, tarjoaa eloisat värit ja terävät yksityiskohdat, mikä tekee siitä täydellisen sekä luovan alan ammattilaisille että pelaajille.</p>
+                                        <button class="product-button mt-4"><img src="img/cart.png" alt="shopping cart image" style="height: 50px;"><br>+ Lisää ostoskoriin</button>
+                                    </div>    
                                 </div>
                             </div>
                             <!-- Product 10 -->
@@ -252,11 +249,12 @@
                                     <div class="product-image-container mb-2">
                                         <img src="img/screen2.jpg" alt="Picture of PanoraMax 42W computer monitor">
                                     </div>
-
                                     <h3>PanoraMax 42W</h3>
-                                    <p class="product-price">500€</p>
+                                    <p class="product-price">500 €</p>
                                     <div class="product-description">
-                                        PanoraMax 42W on ultralaajakuva näyttö, joka tarjoaa poikkeuksellisen kirkkaan ja tarkan kuvanlaadun. 42-tuumainen paneeli yhdistää laajan katselukulman ja upean väritarkkuuden, tehden siitä erinomaisen valinnan niin pelaamiseen, sisällöntuotantoon kuin monitehtävien käyttöön.
+                                        <p class="product-description-text">PanoraMax 42W on ultralaajakuva näyttö, joka tarjoaa poikkeuksellisen kirkkaan ja tarkan kuvanlaadun.</p>
+                                        <p class="product-description-text">42-tuumainen paneeli yhdistää laajan katselukulman ja upean väritarkkuuden, tehden siitä erinomaisen valinnan niin pelaamiseen, sisällöntuotantoon kuin monitehtävien käyttöön.</p>
+                                        <button class="product-button mt-4"><img src="img/cart.png" alt="shopping cart image" style="height: 50px;"><br>+ Lisää ostoskoriin</button>
                                     </div>
                                 </div>
                             </div>
@@ -266,11 +264,11 @@
                                     <div class="product-image-container mb-2">
                                         <img src="img/screen3.jpg" alt="Picture of ViperGaming X computer monitor">
                                     </div>
-
                                     <h3>ViperGaming X</h3>
-                                    <p class="product-price">750€</p>
+                                    <p class="product-price">750 €</p>
                                     <div class="product-description">
-                                        ViperGaming X on korkeatehoinen 34-tuumainen ultralaajakuvan pelimonitori, joka on suunniteltu tarjoamaan mukaansatempaavan kokemuksen kaikkein intensiivisimmissä pelisessioissa.
+                                        <p class="product-description-text">ViperGaming X on korkeatehoinen 34-tuumainen ultralaajakuvan pelimonitori, joka on suunniteltu tarjoamaan mukaansatempaavan kokemuksen kaikkein intensiivisimmissä pelisessioissa.</p>
+                                        <button class="product-button mt-4"><img src="img/cart.png" alt="shopping cart image" style="height: 50px;"><br>+ Lisää ostoskoriin</button>
                                     </div>
                                 </div>
                             </div> 
@@ -280,11 +278,12 @@
                                     <div class="product-image-container mb-2">
                                         <img src="img/screen4.jpg" alt="Picture of VisionPro 27X computer monitor">
                                     </div>
-
                                     <h3>VisionPro 27X</h3>
-                                    <p class="product-price">650€</p>
+                                    <p class="product-price">650 €</p>
                                     <div class="product-description">
-                                        VisionPro 27X on suunniteltu erityisesti graafisille suunnittelijoille ja ammattilaisille, jotka tarvitsevat tarkkaa väritarkkuutta ja laajaa näkökenttää. 27 tuuman näyttö tarjoaa 4K-resoluution ja 99% sRGB-väriavaruuden, mikä takaa tarkan ja eläväisen värintoiston.
+                                        <p class="product-description-text">VisionPro 27X on suunniteltu erityisesti graafisille suunnittelijoille ja ammattilaisille, jotka tarvitsevat tarkkaa väritarkkuutta ja laajaa näkökenttää.</p>
+                                        <p class="product-description-text">27 tuuman näyttö tarjoaa 4K-resoluution ja 99% sRGB-väriavaruuden, mikä takaa tarkan ja eläväisen värintoiston.</p>
+                                        <button class="product-button mt-4"><img src="img/cart.png" alt="shopping cart image" style="height: 50px;"><br>+ Lisää ostoskoriin</button>
                                     </div>
                                 </div>
                             </div>
@@ -293,7 +292,6 @@
                 </div>                           
             </section>        
         </main>
-
         <!-- Footer -->
         <footer class="footer">
             <div class="container text-center">
