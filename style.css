@@ -439,6 +439,16 @@ section
     {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .product-price
+    {
+        margin-top: 59px;
+    }
+
+    .lux-h
+    {
+        margin-top: 86px;
+    }
 }
 
 @media (max-width: 576px)
